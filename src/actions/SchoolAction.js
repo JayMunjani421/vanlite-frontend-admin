@@ -27,7 +27,7 @@ export const getAllSchoolData = () => {
                     dispatch({ type: "STORE_DATA", "payload": { "data": json["School_data"] } });
                 }
             })
-            .catch((error) => {
+            .catch((error) => { 
                 dispatch({ type: "END" });
             });
     };
