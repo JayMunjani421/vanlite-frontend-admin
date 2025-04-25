@@ -6,7 +6,6 @@ import SchoolReducer from "../reducers/SchoolReducer";
 const rootReducer = combineReducers({
     "admin": AdminReducer,
     "school": SchoolReducer,
-    
 });
 
 const mystore = legacy_createStore(rootReducer, applyMiddleware(thunk));

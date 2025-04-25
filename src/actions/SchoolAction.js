@@ -1,22 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../constants/constant";
 
-// export const getAllSchoolData = () => {
-//     return (dispatch) => {
-//         dispatch({ "type": "START" });
-//         axios.get(`${BASE_URL}school/viewdata`)
-//             .then((response) => {
-//                 if (response.status === 200) {
-//                     var json = response.data;
-//                     dispatch({ "type": "STORE_DATA", "payload": { "data": json.School_data } });
-//                 }
-//             })
-//             .catch((error) => {
-//                 dispatch({ "type": "END" });
-//             })
-//     };
-// };
-
 export const getAllSchoolData = () => {
     return (dispatch) => {
         dispatch({ type: "START" });

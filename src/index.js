@@ -25,7 +25,6 @@ root.render(
                     <Route path="/schooleditform/:id" element={<SchoolEditForm />} />
                     <Route path="/schooldetail/:id" element={<SchoolDetail />} />
                 </Route>
-
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </BrowserRouter>
